@@ -7,7 +7,7 @@ public class BasicCalculator {
         double FirstNumber;
         double SecondNumber;
         String Operation;
-        double Result = 0;
+        double Result;
 
         //input
         System.out.print("Enter the first number:");
@@ -37,6 +37,7 @@ public class BasicCalculator {
             Result = FirstNumber/SecondNumber;
         } else {
             System.out.println("Invalid operation");
+            Result = 0;
         }
 
         System.out.println("The result of the operation is: " + Result);
