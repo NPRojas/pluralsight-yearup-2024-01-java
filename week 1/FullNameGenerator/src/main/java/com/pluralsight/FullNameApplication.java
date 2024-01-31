@@ -28,6 +28,9 @@ public class FullNameApplication {
         suffix = userInput.nextLine();
 
         fullName = firstName + " " + middleName + " " + lastName + " " + suffix;
-        return fullName;
+        // find any double spaces and replace with single spaces
+        fullName = fullName.replace("  "," ");
+        // trim the ends
+        return fullName.trim();
     }
 }
