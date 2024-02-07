@@ -18,7 +18,8 @@ public class CardGame
         Deck deck = new Deck();
         // shuffle the cards
         deck.shuffle();
-
+        // keep track of a winning hand
+        Hand winningPlayer = players.get(0);
         // loop through the players and deal the cards from the deck
         for (Hand player: players) {
 
@@ -30,14 +31,12 @@ public class CardGame
                 player.deal(cardDealt);
             }
 
-            // get player name
-            System.out.println(player.getPlayerName());
-            // display the value
-            player.showHand();
+            if (player.getValue() > winningPlayer.getValue()) {
+                winningPlayer = player;
+            }
         }
 
-        // loop and determine who won
-
         // display the winner
+        System.out.println("The winning player is " + winningPlayer.getPlayerName() + "with a value of " + winningPlayer.getValue());
     }
 }
