@@ -57,6 +57,7 @@ public class CellPhone {
     }
     // Question: should I used void instead of Public Void since this method will be for the class instances only?
     void dial(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
         System.out.println(owner + "'s phone is calling " + phoneNumber);
     }
 
