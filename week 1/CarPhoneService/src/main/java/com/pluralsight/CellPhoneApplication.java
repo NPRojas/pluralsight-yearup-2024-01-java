@@ -42,5 +42,6 @@ public class CellPhoneApplication {
         System.out.println("Owner: " + cellPhone.getOwner());
         System.out.println("Phone Number: " + cellPhone.getPhoneNumber());
 
+        cellPhone.dial("212-895-1345");
     }
 }
