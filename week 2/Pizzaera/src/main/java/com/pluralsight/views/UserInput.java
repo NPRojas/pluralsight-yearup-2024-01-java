@@ -1,22 +1,22 @@
-package org.pluralsight;
+package com.pluralsight.views;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class PizzeriaApplication {
-
-    public void run() {
-        Scanner scanner = new Scanner(System.in);
+public class UserInput {
+    Scanner scanner = new Scanner(System.in);
+    public void displayHomeScreen() {
         System.out.println("Welcome to Pizzeria");
         System.out.println("--------------------");
         System.out.println();
+    }
 
+    public void getCustomerName() {
         System.out.print("Please Enter Name ");
         String name = scanner.nextLine();
         System.out.println();
-
-        System.out.println("Menu");
-        System.out.println("------------");
+    }
+    public String getPizzaSize() {
         System.out.println("Pizza Sizes");
         System.out.println("(S)mall -  $ 5.99");
         System.out.println("(M)edium - $ 8.99");
@@ -25,6 +25,10 @@ public class PizzeriaApplication {
         String size = scanner.nextLine().strip();
         System.out.println();
 
+        return size;
+    }
+
+    public String getSauce() {
         System.out.println("Sauces");
         System.out.println("(T)omato");
         System.out.println("(A)lfredo");
@@ -32,6 +36,10 @@ public class PizzeriaApplication {
         System.out.println("Select your sauce: ");
         String sauce = scanner.nextLine().strip();
 
+        return sauce;
+    }
+
+    public String getCheese() {
         System.out.println();
         System.out.println("Cheeses");
         System.out.println("(M)ozzerella");
@@ -41,7 +49,11 @@ public class PizzeriaApplication {
         System.out.println("Select your cheese: ");
         String cheese = scanner.nextLine().strip();
 
-        //toppings
+        return cheese;
+    }
+
+    public ArrayList<String> getToppings() {
+
         ArrayList<String> toppings = new ArrayList<>();
 
         System.out.print("Do you want to add a topping (y/n)?");
@@ -55,11 +67,14 @@ public class PizzeriaApplication {
             System.out.print("Do you want to add another topping (y/n)?");
             addToppings = scanner.nextLine().strip();
         }
-
-        //display order
-        for(String topping: toppings) {
-            System.out.println();
-        }
+        return toppings;
+    }
+    public void displayOrder(String name, double totalPrice, String sizeDisplay, String sauceDisplay, String cheeseDisplay, ArrayList<>) {
+        System.out.println();
+        System.out.println("Order Details");
+        System.out.println("Name: " + name);
+        System.out.println("Price: $ %.2f \n" + totalPrice);
+        System.out.println("Size: ");
 
     }
 }
