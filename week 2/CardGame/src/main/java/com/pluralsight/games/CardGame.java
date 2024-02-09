@@ -20,7 +20,7 @@ public class CardGame
         deck.shuffle();
         // keep track of a winning hand
         Hand winningPlayer = players.get(0);
-        // loop through the players and deal the cards from the deck
+////         loop through the players and deal the cards from the deck
 //        for (Hand player: players) {
 //
 //            // deal a card twice for each player (as per rules of Black Jack)
@@ -34,7 +34,7 @@ public class CardGame
 //            if (player.getValue() > winningPlayer.getValue()) {
 //                winningPlayer = player;
 //            }
-//        }
+//        } 
 
         // display the winner
         System.out.println("The winning player is " + winningPlayer.getPlayerName() + "with a hand of " + winningPlayer.getValue());
