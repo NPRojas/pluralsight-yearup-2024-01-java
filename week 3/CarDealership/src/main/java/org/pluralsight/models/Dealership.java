@@ -7,9 +7,17 @@ public class Dealership {
     private String name;
     private String address;
     private String phone;
-    private ArrayList<String> vehicles;
+    private ArrayList<Vehicle> vehicles;
     public String getName() {
         return name;
+    }
+
+    // constructor
+    public Dealership(String name, String address, String phone) {
+        this.name = name;
+        this.address = address;
+        this.phone = phone;
+        this.vehicles = new ArrayList<>();
     }
 
     public void setName(String name) {
@@ -32,26 +40,25 @@ public class Dealership {
         this.phone = phone;
     }
 
-    public List<vehicle> getVehiclesByPrice(double max, double min) {
+    public List<Vehicle> getVehiclesByPrice(double max, double min) {
         return null;
     }
-    public List<vehicle> getVehiclesByMakeModel(String make, String model) {
+    public List<Vehicle> getVehiclesByMakeModel(String make, String model) {
         return null;
     }
 
-    public List<vehicle> getVehiclesByYear(int year) {
+    public List<Vehicle> getVehiclesByYear(int year) {
         return null;
     }
-    public List<vehicle> getVehiclesByColor(String color) {
         return null;
     }
-    public List<vehicle> getVehiclesByMileage(int odometer) {
+    public List<Vehicle> getVehiclesByMileage(int odometer) {
         return null;
     }
-    public List<vehicle> getVehiclesByType(String vehicleType) {
+    public List<Vehicle> getVehiclesByType(String vehicleType) {
         return null;
     }
-    public List<vehicle> getAllVehicles() {
+    public List<Vehicle> getAllVehicles() {
         return vehicleList;
     }
 
