@@ -69,7 +69,7 @@ public class DealershipFileManager {
         }
         catch (SQLException e) {
             // handle the error
-            System.out.println("There is an error?");
+            System.out.println(e);
         }
         return vehicles;
     }
