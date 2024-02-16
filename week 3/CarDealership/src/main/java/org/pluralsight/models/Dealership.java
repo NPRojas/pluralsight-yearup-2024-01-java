@@ -40,25 +40,25 @@ public class Dealership {
         this.phone = phone;
     }
 
-    public List<Vehicle> getVehiclesByPrice(double max, double min) {
+    public ArrayList<Vehicle> getVehiclesByPrice(double max, double min) {
         return null;
     }
-    public List<Vehicle> getVehiclesByMakeModel(String make, String model) {
+    public ArrayList<Vehicle> getVehiclesByMakeModel(String make, String model) {
         return null;
     }
 
-    public List<Vehicle> getVehiclesByYear(int year) {
+    public ArrayList<Vehicle> getVehiclesByYear(int year) {
         return null;
     }
-    public List<Vehicle> getVehiclesByMileage(int odometer) {
+    public ArrayList<Vehicle> getVehiclesByMileage(int odometer) {
         return null;
     }
-    public List<Vehicle> getVehiclesByType(String vehicleType) {
+    public ArrayList<Vehicle> getVehiclesByType(String vehicleType) {
         return null;
     }
-//    public List<Vehicle> getAllVehicles() {
-//        return vehicles;
-//    }
+    public ArrayList<Vehicle> getAllVehicles() {
+        return vehicles;
+    }
 
 //    public void addVehicle(vehicle) {
 //        //add vehicle to which list?
