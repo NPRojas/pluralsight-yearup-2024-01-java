@@ -50,24 +50,22 @@ public class Dealership {
     public List<Vehicle> getVehiclesByYear(int year) {
         return null;
     }
-        return null;
-    }
     public List<Vehicle> getVehiclesByMileage(int odometer) {
         return null;
     }
     public List<Vehicle> getVehiclesByType(String vehicleType) {
         return null;
     }
-    public List<Vehicle> getAllVehicles() {
-        return vehicleList;
-    }
+//    public List<Vehicle> getAllVehicles() {
+//        return vehicles;
+//    }
 
-    public void addVehicle(vehicle) {
-        //add vehicle to which list?
-    }
-
-    public void removeVehicle(vehicle) {
-        // remove it from which list?
-    }
+//    public void addVehicle(vehicle) {
+//        //add vehicle to which list?
+//    }
+//
+//    public void removeVehicle(vehicle) {
+//        // remove it from which list?
+//    }
 
 }
